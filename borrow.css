@@ -1,0 +1,52 @@
+body {
+    background-color: #1c1c1c;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.bookshelf {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.book {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.book:hover {
+    transform: translateY(-5px);
+}
+
+.book h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.book p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.book button {
+    background-color: #fff;
+    color: #1c1c1c;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
